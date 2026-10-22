@@ -57,6 +57,13 @@ html,body{margin:0;padding:0}body{background:#f3f5f8}
 @media print{#sc-resume a.sc-download{display:none}#sc-resume .sc-header{grid-template-areas:"name contacts" "role contacts"}#sc-resume .sc-contacts{align-self:end}}
 #sc-resume .sc-topic{display:block}
 @media(max-width:620px){#sc-resume .sc-project-heading{flex-direction:column;align-items:flex-start;gap:4px}#sc-resume .sc-project-heading h3{flex:none}}
+
+@media screen{
+  #sc-resume{word-break:keep-all;overflow-wrap:break-word;line-break:strict}
+  #sc-resume .sc-intro{overflow-wrap:break-word}
+  #sc-resume .sc-heading-word{white-space:nowrap}
+  #sc-resume .sc-text-word{display:inline-block;max-width:100%;overflow-wrap:break-word}
+}
 </style>
 </head>
 <body>
@@ -73,27 +80,27 @@ html,body{margin:0;padding:0}body{background:#f3f5f8}
 <a href="https://velog.io/@scy512/posts" target="_blank" rel="noreferrer">Blog ↗</a><a href="https://github.com/song-chaeyoung" target="_blank" rel="noreferrer">GitHub ↗</a>          </div>
         </div>
       </header>
-      <p class="sc-intro">React·Next.js 기반으로 서비스를 개발하는 프론트엔드 개발자 송채영입니다.<br> 새로운 기술을 접하면 빠르게 익히고, 원리를 이해해 프로젝트의 목적과 상황에 맞게 활용합니다. 개발 중 마주한 문제는 원인을 끝까지 추적하며 해결 방법을 찾습니다.<br> AI 시대에 더 효율적으로 개발하고 더 나은 서비스를 만들기 위해, 사람과 기술을 어떻게 연결할 수 있을지 늘 고민합니다.</p>
+      <p class="sc-intro"><span class="sc-text-word">React·Next.js</span> 기반으로 서비스를 개발하는 프론트엔드 개발자 송채영입니다.<br> 새로운 기술을 접하면 빠르게 익히고, 원리를 이해해 프로젝트의 목적과 상황에 맞게 활용합니다. 개발 중 마주한 문제는 원인을 끝까지 추적하며 해결 방법을 찾습니다.<br> AI 시대에 더 효율적으로 개발하고 더 나은 서비스를 만들기 위해, 사람과 기술을 어떻게 연결할 수 있을지 늘 고민합니다.</p>
       <div class="sc-stack"><strong>주요 기술</strong><span>React</span><span>TypeScript</span><span>Next.js</span><span>TanStack Query</span></div>
     </div>
     <section class="sc-section"><h2>CAREER</h2>
       <div class="sc-row" data-context="삼성물산 홈닉 고도화 프로젝트 (단지포탈)" data-entry-id="exp-adcapsule">
         <aside class="sc-meta"><h3>애드캡슐 소프트</h3><p>2025.10 -<br>프론트엔드 개발자</p></aside>
         <div class="sc-content">
-          <div class="sc-lead"><div class="sc-project-heading"><h3>삼성물산 홈닉 고도화 프로젝트 (단지포탈)</h3><p class="sc-project-period" aria-label="프로젝트 기간">2025.10 - 2026.01</p></div><p class="sc-desc">약 6명의 프론트엔드 팀에서 기존 단지 포털을 React 기반 관리자 백오피스로 재구축하는 프로젝트에 참여해, 관리자 페이지 3개 신규 구축과 공통 기능 지원을 담당</p><p class="sc-tech">React · TypeScript · Ant Design · TanStack Query · nuqs</p></div>
-          <div class="sc-topic"><h4>관리자 화면 구축·서버 데이터 처리</h4><ul><li>Ant Design을 활용해 데이터 테이블·입력 폼과 페이지네이션·필터링 기능 구현</li><li>TanStack Query를 활용한 서버 데이터 조회 및 캐시 동기화 로직 구성</li></ul></div>
-          <div class="sc-topic"><h4>URL 기반 검색 조건·화면 이동 제어</h4><ul><li>nuqs로 날짜·카테고리 검색 조건과 URL 쿼리 파라미터를 양방향 동기화하고 런타임 타입 검증 적용</li><li>목록·상세 화면 이동 시 검색 조건을 유지하고, 다른 메뉴 진입 시 초기화하도록 처리</li><li>검색 조건 변경 시 replace를 사용하도록 내비게이션과 브라우저 히스토리 제어</li></ul></div>
-          <div class="sc-topic"><h4>공통 기능·오류 대응</h4><ul><li>파일 다운로드 로직을 공통 유틸리티로 분리해 2개 화면에 적용</li><li>전역 Error Boundary를 적용해 런타임 오류 발생 시 대체 화면(Fallback UI) 제공</li></ul></div>
+          <div class="sc-lead"><div class="sc-project-heading"><h3><span class="sc-heading-word">삼성물산</span> <span class="sc-heading-word">홈닉</span> <span class="sc-heading-word">고도화</span> <span class="sc-heading-word">프로젝트</span> <span class="sc-heading-word">(단지포탈)</span></h3><p class="sc-project-period" aria-label="프로젝트 기간">2025.10 - 2026.01</p></div><p class="sc-desc">약 6명의 프론트엔드 팀에서 기존 단지 포털을 React 기반 관리자 백오피스로 재구축하는 프로젝트에 참여해, 관리자 페이지 3개 신규 구축과 공통 기능 지원을 담당</p><p class="sc-tech">React <span class="sc-text-word">·</span> TypeScript <span class="sc-text-word">·</span> Ant Design <span class="sc-text-word">·</span> TanStack Query <span class="sc-text-word">·</span> nuqs</p></div>
+          <div class="sc-topic"><h4>관리자 화면 <span class="sc-text-word">구축·서버</span> 데이터 처리</h4><ul><li>Ant Design을 활용해 데이터 <span class="sc-text-word">테이블·입력</span> 폼과 <span class="sc-text-word">페이지네이션·필터링</span> 기능 구현</li><li>TanStack Query를 활용한 서버 데이터 조회 및 캐시 동기화 로직 구성</li></ul></div>
+          <div class="sc-topic"><h4>URL 기반 검색 <span class="sc-text-word">조건·화면</span> 이동 제어</h4><ul><li>nuqs로 <span class="sc-text-word">날짜·카테고리</span> 검색 조건과 URL 쿼리 파라미터를 양방향 동기화하고 런타임 타입 검증 적용</li><li><span class="sc-text-word">목록·상세</span> 화면 이동 시 검색 조건을 유지하고, 다른 메뉴 진입 시 초기화하도록 처리</li><li>검색 조건 변경 시 replace를 사용하도록 내비게이션과 브라우저 히스토리 제어</li></ul></div>
+          <div class="sc-topic"><h4>공통 <span class="sc-text-word">기능·오류</span> 대응</h4><ul><li>파일 다운로드 로직을 공통 유틸리티로 분리해 2개 화면에 적용</li><li>전역 Error Boundary를 적용해 런타임 오류 발생 시 대체 <span class="sc-text-word">화면(Fallback</span> <span class="sc-text-word">UI)</span> 제공</li></ul></div>
         </div>
       </div>
       <div class="sc-row" data-context="ESS ERP" data-entry-id="exp-bizvi">
         <aside class="sc-meta"><h3>비즈비</h3><p>2025.01 - 2025.09<br>프론트엔드 개발자</p></aside>
         <div class="sc-content">
-          <div class="sc-lead"><div class="sc-project-heading"><h3>ESS ERP</h3><p class="sc-project-period" aria-label="프로젝트 기간">2025.01 - 2025.09</p></div><p class="sc-desc">직원이 출퇴근·근태, 경비 청구, 전자결재와 증명서 업무를 웹과 앱에서 처리하는 ERP 시스템</p><p class="sc-tech">Next.js · React · React Native · TypeScript · Tailwind · Zustand</p></div>
-          <div class="sc-topic"><h4>웹·앱 개발 구조 설계</h4><ul><li>Next.js App Router와 React Native 기반으로 웹·앱 디렉터리 구조와 페이지 흐름을 설계</li><li>TypeScript 기반 공통 컴포넌트·유틸리티·스토어를 구성하고 웹뷰 환경에 대응하는 UI 로직 구현</li></ul></div>
-          <div class="sc-topic"><h4>경비 청구·전자결재 흐름 구현</h4><ul><li>스크래핑된 카드 데이터를 API로 조회하고 페이지네이션 처리</li><li>법인·개인 카드와 영수증의 입력 조건을 검증한 뒤 서버 전송 및 상태 갱신 처리</li><li>기안·결재·승인·반려 단계에 따른 상태와 예외 분기 로직을 구현하고 갱신 결과를 화면에 반영</li><li>백엔드가 스크래핑의 단순 상태만 제공하는 조건에서 로컬 스토리지로 진행 상태를 관리하고 완료 메시지 표시</li></ul></div>
-          <div class="sc-topic"><h4>근태 캘린더·업무 화면 개발</h4><ul><li>출퇴근·근무·연차 현황 대시보드와 근무 시간 원형 진행바 애니메이션 구현</li><li>외부 캘린더 라이브러리 없이 월간·주간 데이터를 생성하는 커스텀 훅을 만들고, 근태 유형과 결재 상태에 따른 모달 구현</li><li>사원 정보와 카드 등록·수정 상태에 따라 입력 항목이 달라지는 동적 폼 구현</li><li>입사일과 증명서 종류를 기준으로 조회 범위와 제출 폼을 분기하는 증명서 발급 기능 구현</li></ul></div>
-          <div class="sc-topic"><h4>자료 제출·상태 관리</h4><ul><li>자료 제출을 위한 Drag &amp; Drop 인터페이스와 예외 처리 직접 구현</li><li>Zustand로 기능별 상태를 분리하고 낙관적 업데이트, 스켈레톤 로딩과 API 오류 상태별 UI 구현</li></ul></div>
+          <div class="sc-lead"><div class="sc-project-heading"><h3><span class="sc-heading-word">ESS</span> <span class="sc-heading-word">ERP</span></h3><p class="sc-project-period" aria-label="프로젝트 기간">2025.01 - 2025.09</p></div><p class="sc-desc">직원이 <span class="sc-text-word">출퇴근·근태,</span> 경비 청구, 전자결재와 증명서 업무를 웹과 앱에서 처리하는 ERP 시스템</p><p class="sc-tech">Next.js <span class="sc-text-word">·</span> React <span class="sc-text-word">·</span> React Native <span class="sc-text-word">·</span> TypeScript <span class="sc-text-word">·</span> Tailwind <span class="sc-text-word">·</span> Zustand</p></div>
+          <div class="sc-topic"><h4><span class="sc-text-word">웹·앱</span> 개발 구조 설계</h4><ul><li>Next.js App Router와 React Native 기반으로 <span class="sc-text-word">웹·앱</span> 디렉터리 구조와 페이지 흐름을 설계</li><li>TypeScript 기반 공통 <span class="sc-text-word">컴포넌트·유틸리티·스토어를</span> 구성하고 웹뷰 환경에 대응하는 UI 로직 구현</li></ul></div>
+          <div class="sc-topic"><h4>경비 <span class="sc-text-word">청구·전자결재</span> 흐름 구현</h4><ul><li>스크래핑된 카드 데이터를 API로 조회하고 페이지네이션 처리</li><li><span class="sc-text-word">법인·개인</span> 카드와 영수증의 입력 조건을 검증한 뒤 서버 전송 및 상태 갱신 처리</li><li><span class="sc-text-word">기안·결재·승인·반려</span> 단계에 따른 상태와 예외 분기 로직을 구현하고 갱신 결과를 화면에 반영</li><li>백엔드가 스크래핑의 단순 상태만 제공하는 조건에서 로컬 스토리지로 진행 상태를 관리하고 완료 메시지 표시</li></ul></div>
+          <div class="sc-topic"><h4>근태 <span class="sc-text-word">캘린더·업무</span> 화면 개발</h4><ul><li><span class="sc-text-word">출퇴근·근무·연차</span> 현황 대시보드와 근무 시간 원형 진행바 애니메이션 구현</li><li>외부 캘린더 라이브러리 없이 <span class="sc-text-word">월간·주간</span> 데이터를 생성하는 커스텀 훅을 만들고, 근태 유형과 결재 상태에 따른 모달 구현</li><li>사원 정보와 카드 <span class="sc-text-word">등록·수정</span> 상태에 따라 입력 항목이 달라지는 동적 폼 구현</li><li>입사일과 증명서 종류를 기준으로 조회 범위와 제출 폼을 분기하는 증명서 발급 기능 구현</li></ul></div>
+          <div class="sc-topic"><h4>자료 <span class="sc-text-word">제출·상태</span> 관리</h4><ul><li>자료 제출을 위한 Drag &amp; Drop 인터페이스와 예외 처리 직접 구현</li><li>Zustand로 기능별 상태를 분리하고 낙관적 업데이트, 스켈레톤 로딩과 API 오류 상태별 UI 구현</li></ul></div>
         </div>
       </div>
     </section>
@@ -102,11 +109,11 @@ html,body{margin:0;padding:0}body{background:#f3f5f8}
 프론트엔드 개발 과정" data-entry-id="edu-genai-frontend-course">
         <aside class="sc-meta"><h3 class="sc-explicit-lines">생성형AI를 통한
 프론트엔드 개발 과정</h3><p>2024.06 - 2024.12</p></aside>
-        <div class="sc-content"><div class="sc-topic"><p class="sc-detail"><strong>수료</strong><br>Figma를 활용해 화면 디자인 작업 및 React를 활용해 화면을 구성하고 설계<br>생성형 AI(ChatGPT)를 활용하여 코드 작성 과정을 보완하고, 효율적인 문제 해결 방안을 적용</p></div></div>
+        <div class="sc-content"><div class="sc-topic"><p class="sc-detail"><strong>수료</strong><br>Figma를 활용해 화면 디자인 작업 및 React를 활용해 화면을 구성하고 설계<br>생성형 <span class="sc-text-word">AI(ChatGPT)를</span> 활용하여 코드 작성 과정을 보완하고, 효율적인 문제 해결 방안을 적용</p></div></div>
       </div>
       <div class="sc-row" data-context="창원대학교" data-entry-id="edu-changwon-architecture">
         <aside class="sc-meta"><h3>창원대학교</h3><p>2017.03 - 2022.02</p></aside>
-        <div class="sc-content"><div class="sc-topic"><p class="sc-detail"><strong>학사 · 건축학전공(5년제)</strong><br>건축학 5년제 과정을 이수하며 구조적 사고와 시각적 표현 능력을 함께 키움<br>사용자 동선을 고려해 공간을 설계하고, 기능성과 미적 요소가 조화를 이루도록 구성<br>모형 제작과 도면 작업을 진행하고, Photoshop·Illustrator 등 디자인 도구를 활용해 정보를 시각적으로 전달</p></div></div>
+        <div class="sc-content"><div class="sc-topic"><p class="sc-detail"><strong>학사 · <span class="sc-text-word">건축학전공(5년제)</span></strong><br>건축학 5년제 과정을 이수하며 구조적 사고와 시각적 표현 능력을 함께 키움<br>사용자 동선을 고려해 공간을 설계하고, 기능성과 미적 요소가 조화를 이루도록 구성<br>모형 제작과 도면 작업을 진행하고, <span class="sc-text-word">Photoshop·Illustrator</span> 등 디자인 도구를 활용해 정보를 시각적으로 전달</p></div></div>
       </div>
     </section>
     <section class="sc-section"><h2>OTHER EXPERIENCE</h2>
